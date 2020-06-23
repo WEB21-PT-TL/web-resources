@@ -1,10 +1,9 @@
 import React from "react";
-import { Document } from "react-pdf";
 
 export default function Links() {
   return (
     <div style={{ textAlign: "left" }}>
-      <h2>Links</h2>
+      <h2>Links to useful resources</h2>
       <li>
         <a
           href="https://www.educative.io/courses/javascript-fundamentals-before-learning-react"

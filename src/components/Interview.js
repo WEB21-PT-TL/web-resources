@@ -17,6 +17,7 @@ export default function Interview() {
             <li>Node Express Router</li>
             <li>Server-side Authentication</li>
             <li>Database Organization</li>
+            <hr/>
         </div>
     )
 }

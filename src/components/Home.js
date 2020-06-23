@@ -10,6 +10,7 @@ import {
   EyeOutlined,
   SettingOutlined,
   StarOutlined,
+  MailOutlined,
 } from "@ant-design/icons";
 import { Input } from "antd";
 import FrontEnd from "./FrontEnd"
@@ -18,6 +19,7 @@ import Videos from "./Videos";
 import Links from "./Links";
 import Bookmarks from "./Bookmarks";
 import Interview from "./Interview";
+import Feedback from "./Feedback";
 
 const { Search } = Input;
 
@@ -36,8 +38,8 @@ export default function Home() {
       >
         <div className="logo" />
         <Menu theme="dark" mode="inline" defaultSelectedKeys={["4"]}>
-          <Menu.Item key="1" icon={<HomeOutlined />}>
-            Home
+          <Menu.Item key="1" icon={<HomeOutlined />} >
+           Home
           </Menu.Item>
           <Menu.Item key="2" icon={<EyeOutlined />}>
             Front End
@@ -60,6 +62,9 @@ export default function Home() {
           <Menu.Item key="8" icon={<QuestionOutlined />}>
             FAQ
           </Menu.Item>
+          <Menu.Item key="9" icon={<MailOutlined/>}>
+            Feedback
+          </Menu.Item>
         </Menu>
       </Sider>
       <Layout className="site-layout" style={{ marginLeft: 200 }}>
@@ -68,7 +73,7 @@ export default function Home() {
           <Search
             placeholder="Search"
             onSearch={(value) => console.log(value)}
-            style={{ width: 400 }}
+            style={{ width: 300 }}
           />
         </Header>
 
@@ -83,6 +88,9 @@ export default function Home() {
             <Links/>
             <Bookmarks/>
             <Interview/>
+            <div>
+              <Feedback/>
+            </div>
            </div>
         </Content>
         <Footer style={{ textAlign: "center" }}>
