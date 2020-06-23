@@ -39,25 +39,25 @@ export default function Home() {
           <Menu.Item key="1" icon={<HomeOutlined />}>
             Home
           </Menu.Item>
-          <Menu.Item key="1" icon={<EyeOutlined />}>
+          <Menu.Item key="2" icon={<EyeOutlined />}>
             Front End
           </Menu.Item>
-          <Menu.Item key="2" icon={<SettingOutlined />}>
+          <Menu.Item key="3" icon={<SettingOutlined />}>
             Back End
           </Menu.Item>
-          <Menu.Item key="3" icon={<YoutubeOutlined />}>
+          <Menu.Item key="4" icon={<YoutubeOutlined />}>
             Videos
           </Menu.Item>
-          <Menu.Item key="7" icon={<LinkOutlined />}>
+          <Menu.Item key="5" icon={<LinkOutlined />}>
             Links
           </Menu.Item>
-          <Menu.Item key="8" icon={<StarOutlined />}>
+          <Menu.Item key="6" icon={<StarOutlined />}>
             Bookmarks
           </Menu.Item>
-          <Menu.Item key="8" icon={<CheckOutlined />}>
+          <Menu.Item key="7" icon={<CheckOutlined />}>
             Interview Prep
           </Menu.Item>
-          <Menu.Item key="6" icon={<QuestionOutlined />}>
+          <Menu.Item key="8" icon={<QuestionOutlined />}>
             FAQ
           </Menu.Item>
         </Menu>
