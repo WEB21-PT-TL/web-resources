@@ -42,7 +42,16 @@ export default function Links() {
           Building and securing your first App (FE/BE)
         </a>
       </li>
-
+      <li>
+        <a
+          href="https://flexboxfroggy.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          Flexbox Froggy (Game)
+        </a>
+      </li>
 
       <hr />
     </div>

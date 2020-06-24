@@ -11,6 +11,8 @@ import {
   SettingOutlined,
   StarOutlined,
   MailOutlined,
+  MenuUnfoldOutlined,
+  MenuFoldOutlined,
 } from "@ant-design/icons";
 import { Input } from "antd";
 import FrontEnd from "./FrontEnd"
@@ -26,6 +28,7 @@ const { Search } = Input;
 const { Header, Content, Footer, Sider } = Layout;
 
 export default function Home() {
+
   return (
     <Layout>
       <Sider
@@ -35,6 +38,7 @@ export default function Home() {
           position: "fixed",
           left: 0,
         }}
+        
       >
         <div className="logo" />
         <Menu theme="dark" mode="inline" defaultSelectedKeys={["4"]}>
@@ -69,7 +73,6 @@ export default function Home() {
       </Sider>
       <Layout className="site-layout" style={{ marginLeft: 200 }}>
         <Header className="site-layout-background" style={{ padding: 0, textAlign:'center' }}>
-          {" "}
           <Search
             placeholder="Search"
             onSearch={(value) => console.log(value)}
