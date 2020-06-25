@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Landing from "./components/Landing";
 import Home from "./components/Home";
 import AdminView from "./components/AdminView";
+import Login from "./components/Login";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Route exact path="/" component={Landing} />
         <Route path="/home" component={Home} />
         <Route exact path="/admin/7255613851" component={AdminView} />
+        <Route exact path="/login" component={Login} />
       </Switch>
     </Router>
   );
