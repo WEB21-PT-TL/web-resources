@@ -15,7 +15,7 @@ import {
   MenuFoldOutlined,
 } from "@ant-design/icons";
 import { Input } from "antd";
-import FrontEnd from "./FrontEnd"
+import FrontEnd from "./FrontEnd";
 import BackEnd from "./BackEnd";
 import Videos from "./Videos";
 import Links from "./Links";
@@ -28,7 +28,6 @@ const { Search } = Input;
 const { Header, Content, Footer, Sider } = Layout;
 
 export default function Home() {
-
   return (
     <Layout>
       <Sider
@@ -38,42 +37,45 @@ export default function Home() {
           position: "fixed",
           left: 0,
         }}
-        
       >
         <div className="logo" />
         <Menu theme="dark" mode="inline" defaultSelectedKeys={["4"]}>
-          <Menu.Item key="1" icon={<HomeOutlined />} >
-           Home
+          <Menu.Item key="1" icon={<HomeOutlined />}>
+            <a href="#home">Home</a>
           </Menu.Item>
           <Menu.Item key="2" icon={<EyeOutlined />}>
-            Front End
+            <a href="#frontend">Front End</a>
           </Menu.Item>
           <Menu.Item key="3" icon={<SettingOutlined />}>
-            Back End
+            <a href="#backend">Back End</a>
           </Menu.Item>
           <Menu.Item key="4" icon={<YoutubeOutlined />}>
-            Videos
+            <a href="#videos">Videos</a>
           </Menu.Item>
           <Menu.Item key="5" icon={<LinkOutlined />}>
-            Links
+            <a href="#links">Links</a>
           </Menu.Item>
           <Menu.Item key="6" icon={<StarOutlined />}>
-            Bookmarks
+            <a href="#bookmarks">Bookmarks</a>
           </Menu.Item>
           <Menu.Item key="7" icon={<CheckOutlined />}>
-            Interview Prep
+            <a href="#interview-prep">Interview Prep</a>
           </Menu.Item>
-          <Menu.Item key="8" icon={<QuestionOutlined />}>
+          {/* <Menu.Item key="8" icon={<QuestionOutlined />}>
             FAQ
-          </Menu.Item>
-          <Menu.Item key="9" icon={<MailOutlined/>}>
-            Feedback
+          </Menu.Item> */}
+          <Menu.Item key="9" icon={<MailOutlined />}>
+            <a href="#feedback">Feedback</a>
           </Menu.Item>
         </Menu>
       </Sider>
       <Layout className="site-layout" style={{ marginLeft: 200 }}>
-        <Header className="site-layout-background" style={{ padding: 0, textAlign:'center' }}>
+        <Header
+          className="site-layout-background"
+          style={{ padding: 0, textAlign: "center" }}
+        >
           <Search
+            id="home"
             placeholder="Search"
             onSearch={(value) => console.log(value)}
             style={{ width: 300 }}
@@ -85,16 +87,16 @@ export default function Home() {
             className="site-layout-background"
             style={{ padding: 24, textAlign: "center" }}
           >
-            <FrontEnd/>
-            <BackEnd/>
-            <Videos/>
-            <Links/>
-            <Bookmarks/>
-            <Interview/>
+            <FrontEnd />
+            <BackEnd />
+            <Videos />
+            <Links />
+            <Bookmarks />
+            <Interview />
             <div>
-              <Feedback/>
+              <Feedback />
             </div>
-           </div>
+          </div>
         </Content>
         <Footer style={{ textAlign: "center" }}>
           Ant Design ©2018 Created by Ant UED
