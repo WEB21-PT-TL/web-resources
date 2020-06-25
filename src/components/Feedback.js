@@ -86,13 +86,10 @@ export default function Feedback() {
           Submit
         </Button>
       </Form>
-      <br />
-      <br />
-      <h6>
-        Brought to you by your favorite TL's: <br />
-        Aja Blanco, Nathaniel Richards, Songa Mugenzi, James Coulter, <br />
-        Eddie Blanciak, Latosha Tims, Jay Ren, and Marc Tapp.
-      </h6>
+      <br/>
+      <br/>
+      <h6>Brought to you by your favorite TL's: <br/>Aja Blanco and Nathaniel Richards</h6>
+      {/* , Songa Mugenzi, James Coulter, <br/>Eddie Blanciak, Latosha Tims, Jay Ren, Eddie Madrigal, and Marc Tapp.</h6> */}
     </div>
   );
 }
