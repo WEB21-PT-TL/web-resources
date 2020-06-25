@@ -12,8 +12,8 @@ export default function Feedback() {
       <h2> Do you have any Feedback? </h2>
       <h5>
         Feel free to suggest any resources you have found helpful that are not
-        listed here, topics you think I should add or expand on, or simply leave
-        a kind message. Any and all feedback is welcome.{" "}
+        listed here, <br/>topics you think we should add or expand on, or simply leave
+        a kind message. <br/> Any and all feedback is welcome.{" "}
       </h5>
       <br />
 
@@ -47,6 +47,9 @@ export default function Feedback() {
         </Form.Item>
         <Button id="feedback">Submit</Button>
       </Form>
+      <br/>
+      <br/>
+      <h6>Brought to you by your favorite TL's: <br/>Aja Blanco, Nathaniel Richards, Songa Mugenzi, James Coulter, <br/>Eddie Blanciak, Latosha Tims, Jay Ren, and Marc Tapp.</h6>
     </div>
   );
 }
