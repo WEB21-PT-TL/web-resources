@@ -12,8 +12,8 @@ export default function Feedback() {
       <h2> Do you have any Feedback? </h2>
       <h5>
         Feel free to suggest any resources you have found helpful that are not
-        listed here, topics you think I should add or expand on, or
-        simply leave a kind message. Any and all feedback is welcome.{" "}
+        listed here, topics you think I should add or expand on, or simply leave
+        a kind message. Any and all feedback is welcome.{" "}
       </h5>
       <br />
 
@@ -26,10 +26,7 @@ export default function Feedback() {
         >
           <Input />
         </Form.Item>
-        <Form.Item
-          label="Select"
-          {...layout}
-        >
+        <Form.Item label="Select" {...layout}>
           <Select>
             <Select.Option value="other">
               I'd like to Suggest a Resource
@@ -48,7 +45,7 @@ export default function Feedback() {
         >
           <Input.TextArea />
         </Form.Item>
-        <Button>Submit</Button>
+        <Button id="feedback">Submit</Button>
       </Form>
     </div>
   );

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Links() {
   return (
-    <div style={{ textAlign: "left" }}>
+    <div style={{ textAlign: "left" }} id="links">
       <h2>Links to useful resources</h2>
       <li>
         <a

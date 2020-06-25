@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Bookmarks() {
   return (
-    <div style={{ textAlign: "left" }}>
+    <div style={{ textAlign: "left" }} id="bookmarks">
       <h2>Bookmarks / Tools</h2>
       <li>
         <a
