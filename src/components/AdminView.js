@@ -32,19 +32,22 @@ const AdminView = () => {
   }
 
   return (
-    <div style={{ margin: "0 auto", fontSize: "1.5rem", color: "black" }}>
-      <h1>Submissions</h1>
-      <hr />
+    <div style={{ width:"100vw", textAlign:"center", marginTop:"1%"}} >
+    <h1>Submissions</h1>
+    <div style={{ display: "flex", justifyContent:"center", flexWrap: "wrap", textAlign: "left", fontSize: "1rem", color: "#4E4E4E" }}>
       {submissions.map((s) => (
-        <div>
+        <div style={{ width: "30%", border:"1px solid grey", padding:"1%"}}>
           <p>Email: {s.email}</p>
           <p>Reason: {s.reason}</p>
-          <p>Comments: {s.comment}</p>
-          <hr />
-          <Button onClick={handleLogout}>Logout</Button>
+          <p>Message: {s.message}</p>
         </div>
       ))}
+      <div style={{width: "100%", textAlign:"center", padding: "1%"}}>
+      <Button onClick={handleLogout} >Logout</Button>
+      </div>
     </div>
+    </div>
+    
   );
 };
 
