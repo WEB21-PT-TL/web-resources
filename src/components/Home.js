@@ -10,6 +10,7 @@ import {
   SettingOutlined,
   StarOutlined,
   MailOutlined,
+  UserOutlined,
 } from "@ant-design/icons";
 import { Input } from "antd";
 import FrontEnd from "./FrontEnd";
@@ -63,6 +64,9 @@ export default function Home() {
           </Menu.Item> */}
           <Menu.Item key="9" icon={<MailOutlined />}>
             <a href="#feedback">Feedback</a>
+          </Menu.Item>
+          <Menu.Item key="9" icon={<UserOutlined />}>
+            <a href="/login">Admin</a>
           </Menu.Item>
         </Menu>
       </Sider>
