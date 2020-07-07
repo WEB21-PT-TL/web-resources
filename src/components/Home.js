@@ -1,4 +1,4 @@
-import React from "react";
+import React  from "react";
 import "antd/dist/antd.css";
 import { Layout, Menu } from "antd";
 import {
@@ -12,7 +12,7 @@ import {
   MailOutlined,
   UserOutlined,
 } from "@ant-design/icons";
-import { Input } from "antd";
+// import { Input } from "antd";
 import FrontEnd from "./FrontEnd";
 import BackEnd from "./BackEnd";
 import Videos from "./Videos";
@@ -21,11 +21,14 @@ import Bookmarks from "./Bookmarks";
 import Interview from "./Interview";
 import Feedback from "./Feedback";
 
-const { Search } = Input;
+// const { Search } = Input;
 
 const { Header, Content, Footer, Sider } = Layout;
 
+
+
 export default function Home() {
+
   return (
     <Layout>
       <Sider
@@ -59,9 +62,6 @@ export default function Home() {
           <Menu.Item key="7" icon={<CheckOutlined />}>
             <a href="#interview-prep">Interview Prep</a>
           </Menu.Item>
-          {/* <Menu.Item key="8" icon={<QuestionOutlined />}>
-            FAQ
-          </Menu.Item> */}
           <Menu.Item key="9" icon={<MailOutlined />}>
             <a href="#feedback">Feedback</a>
           </Menu.Item>
@@ -75,12 +75,13 @@ export default function Home() {
           className="site-layout-background"
           style={{ padding: 0, textAlign: "center" }}
         >
-          <Search
-            id="home"
+          <h1 style={{color: "white"}}>Welcome!</h1>
+          {/* <Search
+            id="search"
             placeholder="Search"
-            onSearch={(value) => console.log(value)}
+            onSearch={value => console.log(value)}
             style={{ width: 300 }}
-          />
+          /> */}
         </Header>
 
         <Content style={{ margin: "24px 16px 0", overflow: "initial" }}>

@@ -10,8 +10,6 @@ import Login from "./components/Login";
 export default function App() {
   return (
     <Router>
-      {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
       <Switch>
         <Route exact path="/" component={Landing} />
         <Route path="/home" component={Home} />
