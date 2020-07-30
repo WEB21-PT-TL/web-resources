@@ -4,16 +4,7 @@ export default function Links() {
   return (
     <div style={{ textAlign: "left" }} id="links">
       <h2>Links to useful resources</h2>
-      <li>
-        <a
-          href="https://www.educative.io/courses/javascript-fundamentals-before-learning-react"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {" "}
-          Javascript fundamentals before learning React
-        </a>
-      </li>
+
       <li>
         <a
           href="https://fullstackopen.com/en/"
@@ -42,18 +33,18 @@ export default function Links() {
           Building and securing your first App (FE/BE)
         </a>
       </li>
-      <li>
-        <a
-          href="https://flexboxfroggy.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {" "}
-          Flexbox Froggy (Game)
-        </a>
-      </li>
+
 
       <hr />
+      <h2>Coding Challenges</h2>
+      <li>
+        <a href="https://edabit.com/" target="_blank" rel="noopener noreferrer">Edabit Coding Challenges</a>
+      </li>
+      <li>
+        <a href="https://www.hackerrank.com/" target="_blank" rel="noopener noreferrer">Hacker Rank</a>
+      </li>
+      <li><a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer">Leet Code</a></li>
+      <hr/>
     </div>
   );
 }
